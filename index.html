@@ -1,0 +1,227 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="/style.css">
+        <script src="https://kit.fontawesome.com/54b2133511.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <div>
+                <header class="sticky">
+                    <img src="/IMG/mm-removebg-preview.png" class="logo" alt="">
+                    <ul id="sidemenu">
+                        <li onclick="closemenu()"><a href="#header">Home</a></li>
+                        <li onclick="closemenu()"><a href="#about">About</a></li>
+                        <li onclick="closemenu()"><a href="#services">Hobbies</a></li>
+                        <li onclick="closemenu()"><a href="#project">My work</a></li>
+                        <li onclick="closemenu()"><a href="#contact">Contact</a></li>
+                        <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </header>
+            </div>
+            <div id="header"class="cointainer">  
+                <div class="header-text">
+                    <p>Programmer</p>
+                    <h1>Hello, I'm <span>Mahesh</span> <br>Modi from Gujarat, India</h1>
+                </div>
+        </div>
+        
+        <!-- -------------------------------ABOUT----------------------------------------------------------------- -->
+        <div id="about">
+            <div class="cointainer">
+                <div class="row">
+                    <div class="about-col1"><img src="/IMG/pot.jpeg" alt=""></div>
+                    <div class="about-col2">
+                        <h1 class="subtittle">About Me</h1>
+                        <p>a computer science student, explores technology's frontiers with a passion for problem-solving. Engaged in algorithms, data structures, and AI, he seeks innovative solutions to real-world challenges.</p>
+                        <div class="tabtittle">
+                            <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
+                            <p class="tablinks" onclick="opentab('experience')">Experience</p>
+                            <p class="tablinks" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tabcontent activetab" id="skills">
+                            <div class="equald">
+                                <ul>
+                                    <li><span>Python</span><br></li>
+                                    <li><span>C/C++</span><br></li>
+                                    <li><span>OPPs</span><br></li>
+                                    <li><span>JAVA</span><br></li>
+                                    <li><span>asp.NET</span><br></li>
+                                </ul>
+                                <ul>
+                                    <li><span>HTML5</span><br></li>
+                                    <li><span>CSS</span><br></li>
+                                    <li><span>JavaScript</span><br></li>
+                                    <li><span>PHP</span><br></li>
+                                    <li><span>MySQL</span><br></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tabcontent" id="experience">
+                            <ul>
+                                <li><span></span><br>Inexperienced!</li>
+                                <li><span></span><br></li>
+                                <li><span></span><br></li>
+                            </ul>
+                        </div>
+                        <div class="tabcontent" id="education">
+                            <ul>
+                                <li><span>Bachelor-Con..</span><br>Government Engineering College - Patan,<br>University - GTU</li>
+                                <li><span>HSC</span><br>SWASTIK HIGHER SECONDARRY SCHOOL PALANPUR<br>Board - GSHEB</li>
+                                <li><span>SSC</span><br>SHREE B V PATEL VIDHYAMANDIR <br> Board - GSEB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------------------services---------------------------------------- -->
+        <div id="services">
+            <div class="cointainer">
+                <h1 class="subtittle">My Hobbies</h1>
+                <div class="serviceslist">
+                    <div>
+                        <h2>Programming</h2>
+                       
+                        <!-- <a href="#">Learn more</a> -->
+                    </div> 
+                    <div>
+                        <h2>Gaming</h2>
+                        
+                        <!-- <a href="#">Learn more</a> -->
+                    </div>  
+                                 
+                </div>
+            </div>
+        </div>
+
+    <!-- -----------------------------------------Projects--------------------------- -->
+    <!-- <div id="project">
+        <div class="cointainer">
+            <h1 class="subtittle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/IMG/P1.jpg" alt="">
+                    <div class="layer">
+                        <h3>An Education Website</h3>
+                        <p>
+                            This is a website for education purpose. It is made using HTML, CSS, Bootstrap, JavaScript, PHP and MySQL. It is a responsive website.
+                        </p>    
+                        <a href="https://illuminateme84.github.io/"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/IMG/P2.jpg" alt="">
+                    <div class="layer">
+                        <h3>A Club Website</h3>
+                        <p>
+                            This is a website for a club. It is made using HTML, CSS, Bootstrap, JavaScript, PHP and MySQL. It is a responsive website.
+                        </p>   
+                        <a href="https://theideapreneurship022.github.io/"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- ------------------------------------------Contact------------------------------------------------- -->
+
+    <div id="contact">
+        <div class="cointainer">
+            <div class="row bott">
+                <div class="contentLeft">
+                    <h1 class="subtittle">Contact Me :)</h1>
+                    <p><i class="fa-solid fa-envelope"></i> modimahesh708@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9773281502</p>
+                    <div class="socialicon">
+                        
+                        <a href="https://www.linkedin.com/in/mahesh-modi-235661282"><i class="fa-brands fa-linkedin"></i></a>
+                        
+                        <a href="https://instagram.com/_mahesh_2312?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
+                        
+                    </div>
+                    <a href="nill"  class="btn btn2">Download CV</a>
+                </div>
+                <div class="contentRight">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your e-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>Copyright © Mahesh.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            
+            var tablinks = document.getElementsByClassName("tablinks");
+            var tabcontents = document.getElementsByClassName("tabcontent");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("activelink");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("activetab");
+                }
+                event.currentTarget.classList.add("activelink")
+                document.getElementById(tabname).classList.add("activetab")
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right="0";
+            }
+            function closemenu() {
+                sidemenu.style.right="-200px";
+            }
+        </script>
+        <form name="submit-to-google-sheet">
+        </form>
+        
+        <!-- <script>
+            const scriptURL = ''
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+        
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML=""                    
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script> -->
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header"); 
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+        </script>
+    </body>
+    </html>

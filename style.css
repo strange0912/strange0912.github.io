@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth ;
+}
+body{
+    background: black;
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/IMG/land.jpg);
+    /* image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.cointainer{
+    padding: 10px 10%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 10px 10%;
+    z-index: 99999999999;
+    /* margin-top: 0px; */
+
+}
+.sticky{
+    padding: 5px 10%;
+    background-color: #262626;
+
+}
+.logo{
+    width: 140px;
+}
+header ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+header ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #cc00ff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+header ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #cc00ff;
+}
+/* ********************about************************* */
+#about{
+    padding: 80px 0;
+    color: white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -30px;
+}
+.about-col1{
+    flex-basis: 35%;
+}
+.about-col1 img{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col2{
+    flex-basis: 60%;
+}
+.about-col2 p{
+    margin-top: 30px;
+    text-align: justify;
+}
+.subtittle{
+    font-size: 60px;
+    font-weight: 600;
+}
+.tabtittle{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tablinks{
+    margin-right: 50px;
+    font-size: 23px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+.tablinks::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#cc00ff ;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tablinks.activelink::after{
+    width: 50%;
+    
+}
+.tabcontent ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.tabcontent ul li span{
+    color: #cc00ff;
+    font-size: 22px;
+}
+.tabcontent{
+    display: none;
+}
+.tabcontent.activetab{
+    display: block;
+}
+.equald{
+    display: flex;
+    
+}
+.equald ul{
+    margin-right: 10px;
+}
+/* **********************srevices************************** */
+#services{
+padding: 55px 0;
+
+}
+.serviceslist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px ;
+    margin-top: 50px ;
+}
+.serviceslist div{
+    background: #262626 ;
+    padding: 40px;
+    font-size: 13px;
+    text-align: justify;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, tranform 0.5s;
+}
+.serviceslist div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.serviceslist div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20;
+    display: inline-block;
+}
+.serviceslist div:hover{
+    background: #cc00ff;
+    transform: translateY(-10px);
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #cc00ff;
+    padding: 14px 50px ;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background-color: #cc00ff;
+}
+/* ******************************projects********************** */
+#project{
+    padding: 55px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background:linear-gradient(rgba(0,0,0,0.6),#cc00ff);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.4s;
+}
+.layer h3{
+    font-weight: 1000;
+    margin-bottom: 20px;
+
+}
+.layer a{
+    margin-top: 20px;
+    color: #cc00ff;
+    text-decoration: none;
+    font-size: 50px;
+    line-height: 60px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.03);
+}
+.work:hover .layer{
+    height: 100%;
+}
+/* *******************************contact***************************** */
+.contentLeft{
+    flex-basis: 35%;
+}
+.contentRight{
+    flex-basis: 60%;
+}
+.contentLeft p{
+    margin-top: 30px;    
+}
+.contentLeft p i{
+    color: #cc00ff;    
+    margin-right: 15px;
+    font-size: 25px;
+}
+.socialicon{
+    margin-top: 30px;
+}
+.socialicon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: gray;
+}
+.socialicon a:hover{
+    color: #cc00ff;
+}
+.btn.btn2{
+    display: inline-block;
+    background:#cc00ff;
+}
+.contentRight form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copy{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding :25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.bott{
+    margin-top:100px ;
+}
+/* **************************** mobile CSS***************************************** */
+header .fa-regular{
+    display: none;
+
+}
+header .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(/IMG/cccc.jpg);
+    }
+    .header-text{
+        margin-top: 150%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    header .fa-solid{
+        display: block;
+        font-size: 25px;        
+    }
+    header .fa-regular{
+        display: block;
+        font-size: 25px;        
+    }
+    header ul li{
+        padding: 11px 0;
+    }
+    header ul{
+        background: #262626;
+        position: fixed;
+        top: 0;
+        right: -120px;
+        width: 120px;
+        height: 100vh;
+        padding-top:50px;
+        z-index: 2;
+        text-align: center;
+        transition: right 0.5s;
+    }
+    header ul li{
+        display: block;
+        margin: 20px;
+
+    }
+    header ul .fa-regular{
+        position: absolute;
+        top: 25px;
+        right: 45px;
+        cursor: pointer;
+        display: flex;
+
+    }
+    /* ************************************about*********************************** */
+    .subtittle{
+        font-size: 40px;
+
+    }
+    .about-col1,.about-col2{
+        flex-basis: 100%;
+
+    }
+    .about-col1{
+        margin-bottom: 30px;
+    }
+    .about-col2{
+        font-size: 14px;
+    }
+    .tablinks{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contentLeft, .contentRight{
+        flex-basis: 100%;
+
+    }
+    .copy{
+        font-size: 14px;
+    }
+    .layer h3{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .layer p{
+        font-size: 10px;
+    }
+    
+}
+#msg{
+    color: #cc00ff;
+    margin-top: -40px;
+    display: block;
+
+}
